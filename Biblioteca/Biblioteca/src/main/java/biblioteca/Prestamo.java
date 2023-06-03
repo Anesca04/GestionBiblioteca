@@ -36,6 +36,22 @@ public class Prestamo {
     }
     
     /**
+     * Constructor de la clase Prestamo.
+     * Inicializa los atributos con los valores especificados y marca el libro como no devuelto.
+     * 
+     * @param cliente El cliente al que se le prestó el libro
+     * @param libro El libro prestado
+     * @param fechaPrestamo La fecha del préstamo
+     * @param devuelto Si el libro ha sido devuelto
+     */
+    public Prestamo(Cliente cliente, Libro libro, LocalDate fechaPrestamo, boolean devuelto) {
+        this.cliente = cliente;
+        this.libro = libro;
+        this.fechaPrestamo = fechaPrestamo;
+        this.devuelto = devuelto;
+    }
+    
+    /**
      * Getter para obtener el cliente al que se le prestó el libro.
      * 
      * @return El cliente al que se le prestó el libro
