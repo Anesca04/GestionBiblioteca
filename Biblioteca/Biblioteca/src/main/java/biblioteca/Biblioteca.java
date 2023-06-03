@@ -1,5 +1,6 @@
 package biblioteca;
 
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import utils.DAO;
